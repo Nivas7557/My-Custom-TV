@@ -15,7 +15,7 @@ GROUPS_AND_CHANNELS = {
     "Entertainment Group": [
         "Star Maa HD (720p)", "Zee Telugu HD (576p)", "Sun Gemini (576p)", "ETV Telugu HD (1080p)", 
         "ETV Plus (396p)", "ETV Josh (1080p)", "Mahaa Max (1080p)", "Mango Mobile TV (1080p)", 
-        "Telugu One (1080p)", "Vanitha TV (576p)", "Vissa TV (576p)", "ETV Comedy (1080p)",DD Saptagiri (504p)
+        "Telugu One (1080p)", "Vanitha TV (576p)", "Vissa TV (576p)", "ETV Comedy (1080p)", "DD Saptagiri (504p)"
     ],
     "Movies Group": [
         "Star Maa Movies HD (720p)", "ETV Cinema (396p)", "ETV Cinema HD (1080p)", "Tolly TV (1080p)"
