@@ -2,7 +2,7 @@ import requests
 import re
 
 # 1. ఒరిజినల్ సోర్స్ లింక్
-ORIGINAL_M3U_URL = "https://github.io"
+ORIGINAL_M3U_URL = "https://iptv-org.github.io/iptv/index.m3u"
 OUTPUT_FILE = "my_custom_playlist.m3u"
 
 # 2. మీరు ఇచ్చిన ఖచ్చితమైన ఛానల్స్ లిస్ట్ (ఎలాంటి మార్పులు లేకుండా సేమ్ టు సేమ్ ఇవ్వబడింది)
