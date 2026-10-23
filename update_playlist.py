@@ -1,11 +1,11 @@
 import requests
 import re
 
-# 1. CORRECTED SOURCE LINK: కచ్చితమైన ఒరిజినల్ సోర్స్ లింక్ ఇక్కడ అప్‌డేట్ చేయబడింది
+# 1. CORRECTED SOURCE LINK: ఒరిజినల్ సోర్స్ లింక్ ఇక్కడ అప్‌డేట్ చేయబడింది
 ORIGINAL_M3U_URL = "https://iptv-org.github.io/iptv/index.m3u"
 OUTPUT_FILE = "my_custom_playlist.m3u"
 
-# 2. మీ ఫైనల్ ఛానల్స్ మరియు గ్రూపుల కాన్ఫిగరేషన్ (ESPN తొలగించబడింది)
+# 2. ఫైనల్ ఛానల్స్ మరియు గ్రూపుల కాన్ఫిగరేషన్
 GROUPS_AND_CHANNELS = {
     "Sports Channels": [
         "Star Sports 1 (720p)", "Star Sports 2 (720p)", "Star Sports 1 Hindi (720p)", "Star Sports First (576i)",
@@ -15,16 +15,14 @@ GROUPS_AND_CHANNELS = {
     "Entertainment Group": [
         "Star Maa HD (720p)", "Zee Telugu HD (576p)", "Sun Gemini (576p)", "ETV Telugu HD (1080p)", 
         "ETV Plus (396p)", "ETV Josh (1080p)", "Mahaa Max (1080p)", "Mango Mobile TV (1080p)", 
-        "Telugu One (1080p)", "Vanitha TV (576p)", "Vissa TV (576p)", "ETV Comedy (1080p)"
+        "Telugu One (1080p)", "Vanitha TV (576p)", "Vissa TV (576p)", "ETV Comedy (1080p)",DD Saptagiri (504p)
     ],
     "Movies Group": [
         "Star Maa Movies HD (720p)", "ETV Cinema (396p)", "ETV Cinema HD (1080p)", "Tolly TV (1080p)"
     ],
     "English Movie Group": [
-        "HBO (United States) (720p)", "HBO Asia HD (1080p)", "HBO 2 Latin America HD (1080p)", 
-        "HBO Family Latin America (1080p)", "HBO Hits (720p)", "Sony Pix HD (1080p)", 
-        "Star Movies (720p)", "Movies Now (1080p)", "MNX (720p)", "MN+ (1080p)", 
-        "Romedy Now (720p)", "Cinemax (United States) West (720p)", "AMC (United States) (720p)", 
+        "HBO (United States) (720p)", "HBO Hits (720p)", "Sony Pix HD (1080p)", 
+        "Star Movies (720p)", "Movies Now (1080p)", "Cinemax (United States) West (720p)", "AMC (United States) (720p)", 
         "Action 24 (1080p)", "Studio One + (720p)"
     ],
     "Telugu Music": [
@@ -38,8 +36,7 @@ GROUPS_AND_CHANNELS = {
         "TV9 Telugu (720p)", "NTV Telugu (1080p)", "ETV Andhra Pradesh (1080p)", "ETV Telangana (1080p)", 
         "ETV News (1080p)", "ABN Andhra Jyoti (720p)", "TV5 News (576p)", "V6 News (576p)", 
         "10 TV (720p)", "Sakshi TV (576p)", "HMTV (India) (720p)", "INews (720p)", 
-        "Prime9 News (1080p)", "Mahaa News (1080p)", "CVR News (576p)", "Raj News Telugu (576p)", 
-        "Mojo TV (576p)", "Zee Telugu News (720p)"
+        "Prime9 News (1080p)", "Mahaa News (1080p)", "CVR News (576p)", "Mojo TV (576p)", "Zee Telugu News (720p)"
     ],
     "Kids / Animation": [
         "Cartoon Network (India) (720p)", "Nickelodeon (India) (576p)", "Sonic (576p)", "Disney Channel (India) HD (1080p)", 
@@ -49,9 +46,6 @@ GROUPS_AND_CHANNELS = {
     "Religious Group": [
         "Bhakthi TV (720p)", "SVBC (1080p)", "Mahaa Bhakti (1080p)", "Hindu Dharmam (1080p)", 
         "CVR OM Spiritual (576p)", "Aastha Telugu (576p)", "PMC Telugu (1080p)"
-    ],
-    "General Group": [
-        "DD Saptagiri (504p)"
     ],
     "Documentary Group": [
         "National Geographic (India) (576p)", "National Geographic Wild (India) HD (1080p)", "Discovery Channel (India) (720p)", 
