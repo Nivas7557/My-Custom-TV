@@ -5,55 +5,48 @@ import re
 ORIGINAL_M3U_URL = "https://github.io"
 OUTPUT_FILE = "my_custom_playlist.m3u"
 
-# 2. మీ గ్రూపులు మరియు ఖచ్చితమైన ఛానల్స్ లిస్ట్
+# 2. మీరు ఇచ్చిన ఖచ్చితమైన ఛానల్స్ లిస్ట్ (ఎలాంటి మార్పులు లేకుండా సేమ్ టు సేమ్ ఇవ్వబడింది)
 GROUPS_AND_CHANNELS = {
-    "News": [
-        "10 tv", "abn andhra jyoti", "cvr news", "etv andhra pradesh", "etv news", 
-        "etv telangana", "hmtv", "inews", "mahaa news", "mojo tv", "ntv telugu", 
-        "prime9 news", "raj news telugu", "sakshi tv", "tv5 news", "tv9 telugu", 
-        "v6 news", "zee telugu news"
+    "News Group": [
+        "10 TV (720p)", "ABN Andhra Jyoti (720p)", "CVR News (576p)", "ETV Andhra Pradesh (1080p)", 
+        "ETV News (1080p)", "ETV Telangana (1080p)", "HMTV (India) (720p)", "INews (720p)", 
+        "Mahaa News (1080p)", "Mojo TV (576p)", "NTV Telugu (1080p)", "Prime9 News (1080p)", 
+        "Raj News Telugu (576p)", "Sakshi TV (576p)", "TV5 News (576p)", "TV9 Telugu (720p)", 
+        "V6 News (576p)", "Zee Telugu News (720p)"
     ],
-    "Entertainment": [
-        "etv josh", "etv plus", "etv telugu hd", "etv telugu", "mahaa max", "mango mobile tv", 
-        "star maa hd", "star maa", "telugu one", "vanitha tv", "vissa tv", "zee telugu hd", 
-        "zee telugu", "sun gemini", "gemini tv"
+    "Entertainment Group": [
+        "ETV Josh (1080p)", "ETV Plus (396p)", "ETV Telugu HD (1080p)", "Mahaa Max (1080p)", 
+        "Mango Mobile TV (1080p)", "Star Maa HD (720p)", "Telugu One (1080p)", "Vanitha TV (576p)", 
+        "Vissa TV (576p)", "Zee Telugu HD (576p)", "Sun Gemini (576p)"
     ],
-    "Movies": [
-        "etv cinema", "etv cinema hd", "sony pix hd", "sony pix", "star maa movies hd", "star maa movies", "studio one", "tolly tv"
+    "Movies Group": [
+        "ETV Cinema (396p)", "ETV Cinema HD (1080p)", "Sony Pix HD (1080p)", 
+        "Star Maa Movies HD (720p)", "Studio One + (720p)", "Tolly TV (1080p)"
     ],
-    "Animation": [
-        "cartoon network india", "cartoon network", "discovery kids", "disney channel india hd", "disney channel india", "disney channel", "disney junior india", "disney junior", 
-        "etv bal bharat", "hungama tv", "nickelodeon india", "nickelodeon", "sonic", "sony yay", 
-        "super hungama", "wow kidz telugu"
+    "Kids / Animation": [
+        "Cartoon Network (India) (720p)", "Discovery Kids (720p)", "Disney Channel (India) HD (1080p)", 
+        "Disney Junior (India) (576p)", "ETV Bal Bharat (576p)", "Hungama TV (576p)", 
+        "Nickelodeon (India) (576p)", "Sonic (576p)", "Sony Yay! (576p)", "Super Hungama (576p)", 
+        "WOW Kidz Telugu (720p)"
     ],
-    "Religious": [
-        "aastha telugu", "bhakthi tv", "cvr om spiritual", "hindu dharmam", 
-        "mahaa bhakti", "pmc telugu", "svbc"
+    "Religious Group": [
+        "Aastha Telugu (576p)", "Bhakthi TV (720p)", "CVR OM Spiritual (576p)", 
+        "Hindu Dharmam (1080p)", "Mahaa Bhakti (1080p)", "PMC Telugu (1080p)", "SVBC (1080p)"
     ],
-    "Music": [
-        "etv beats", "etv music", "raj musix telugu"
+    "Music Group": [
+        "ETV Beats (1080p)", "ETV Music (1080p)", "Raj Musix Telugu (720p)"
     ],
-    "General": [
-        "dd saptagiri"
+    "General Group": [
+        "DD Saptagiri (504p)"
     ],
-    "Documentary": [
-        "history tv18", "discovery channel india", "discovery channel", "national geographic india", "national geographic", "national geographic wild", "sony bbc earth hd", "sony bbc earth"
+    "Documentary Group": [
+        "History TV18 (576p)", "Discovery Channel (India) (720p)", "National Geographic (India) (576p)", 
+        "National Geographic Wild (India) HD (1080p)", "Sony BBC Earth HD (1080p)"
     ],
-    "Comedy": [
-        "etv comedy"
+    "Comedy Group": [
+        "ETV Comedy (1080p)"
     ]
 }
-
-def clean_name_for_strict_match(text):
-    # చిన్న అక్షరాల్లోకి మారుస్తుంది
-    text = text.lower().strip()
-    # (1080p), (720p), [HD] లాంటి బ్రాకెట్లను, వాటి లోపల ఉన్న టెక్స్ట్‌లను పూర్తిగా తీసేస్తుంది
-    text = re.sub(r'\s*\[[^\]]*\]', '', text)
-    text = re.sub(r'\s*\([^)]*\)', '', text)
-    # కేవలం అక్షరాలు, నంబర్లు, మరియు ఒకే ఒక స్పేస్ ఉండేలా క్లీన్ చేస్తుంది
-    text = re.sub(r'[^a-z0-9\s]', '', text)
-    text = re.sub(r'\s+', ' ', text).strip()
-    return text
 
 def fetch_and_filter_m3u():
     print(f"Fetching original M3U from: {ORIGINAL_M3U_URL}")
@@ -77,31 +70,22 @@ def fetch_and_filter_m3u():
             current_extinf = line
         elif line.strip() and not line.startswith("#"):
             if current_extinf:
-                # ఒరిజినల్ ఛానల్ పేరును వేరు చేస్తుంది
+                # ఒరిజినల్ సోర్స్ లోని ఛానల్ పేరును మాత్రమే విడదీస్తుంది (కామా తర్వాత ఉన్నది)
+                # ఉదాహరణ: "#EXTINF:-1 ...,ETV News (1080p)" -> "ETV News (1080p)"
                 channel_name = current_extinf.split(',')[-1].strip()
                 
-                # పేరును పక్కాగా పోల్చడానికి వీలుగా క్లీన్ చేస్తుంది
-                # ఉదాహరణ: "Cartoon Network (India) (720p)" -> "cartoon network india"
-                # ఉదాహరణ: "ETV News Odisha" -> "etv news odisha"
-                cleaned_source_name = clean_name_for_strict_match(channel_name)
-                
                 matched_group = None
+                # ఎటువంటి మార్పులు లేకుండా కచ్చితమైన పేరు మ్యాచ్ (Exact Match) ఉందో లేదో చూస్తుంది
                 for group_name, channels in GROUPS_AND_CHANNELS.items():
-                    for allowed_channel in channels:
-                        cleaned_allowed = clean_name_for_strict_match(allowed_channel)
-                        
-                        # ఇక్కడ ఖచ్చితమైన మ్యాచ్ (Exact Match) జరుగుతుంది
-                        # దీనివల్ల "cartoon network" కి కేవలం అదే పేరున్నది వస్తుంది, "cartoon network pakistan" రాదు.
-                        # ఒకవేళ ఒరిజినల్ పేరులో "cartoon network india" అని ఉంటే, అది కూడా మ్యాచ్ అవుతుంది.
-                        if cleaned_source_name == cleaned_allowed or cleaned_source_name == cleaned_allowed + " india" or cleaned_source_name + " india" == cleaned_allowed:
-                            matched_group = group_name
-                            break
-                    if matched_group:
+                    if channel_name in channels:
+                        matched_group = group_name
                         break
                 
+                # పేరు వంద శాతం మ్యాచ్ అయితేనే మీ కంప్లీట్ కస్టమ్ గ్రూప్ తో ఇన్సర్ట్ చేస్తుంది
                 if matched_group:
-                    # పాత గ్రూపులను తీసేసి కొత్త కస్టమ్ గ్రూపులను మాత్రమే ఉంచుతుంది
+                    # ఒరిజినల్ ఫైల్ లో ఉన్న పాత గ్రూప్ టైటిల్ ని పూర్తిగా తీసేస్తుంది
                     cleaned_extinf = re.sub(r'\s*group-title="[^"]+"', '', current_extinf)
+                    # మీరు కోరుకున్న కస్టమ్ గ్రూప్ పేరును కొత్తగా యాడ్ చేస్తుంది
                     final_extinf = cleaned_extinf.replace('#EXTINF:', f'#EXTINF: group-title="{matched_group}"', 1)
                     
                     custom_playlist.append(final_extinf)
@@ -109,10 +93,10 @@ def fetch_and_filter_m3u():
                     
                 current_extinf = None
 
-    # 3. కొత్త కస్టమ్ ఫైల్‌ను సేవ్ చేయడం
+    # 3. కొత్త ఫైల్‌ను సేవ్ చేయడం
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(custom_playlist))
-    print(f"Successfully updated! Strict filter applied across all groups.")
+    print(f"Successfully updated! Filtered exactly matching channels.")
 
 if __name__ == "__main__":
     fetch_and_filter_m3u()
