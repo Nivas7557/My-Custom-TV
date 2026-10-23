@@ -1,11 +1,11 @@
 import requests
 import re
 
-# 1. ఒరిజినల్ సోర్స్ లింక్
+# 1. ఖచ్చితమైన ఒరిజినల్ సోర్స్ లింక్ (మీరు అడిగిన లింక్)
 ORIGINAL_M3U_URL = "https://iptv-org.github.io/iptv/index.m3u"
 OUTPUT_FILE = "my_custom_playlist.m3u"
 
-# 2. మీరు ఇచ్చిన ఖచ్చితమైన ఛానల్స్ లిస్ట్ (ఎలాంటి మార్పులు లేకుండా సేమ్ టు సేమ్ ఇవ్వబడింది)
+# 2. మీరు ఇచ్చిన ఖచ్చితమైన ఛానల్స్ లిస్ట్ (ఒక్క అక్షరం లేదా బ్రాకెట్ మారినా ఫిల్టర్ అవ్వదు)
 GROUPS_AND_CHANNELS = {
     "News Group": [
         "10 TV (720p)", "ABN Andhra Jyoti (720p)", "CVR News (576p)", "ETV Andhra Pradesh (1080p)", 
@@ -70,22 +70,22 @@ def fetch_and_filter_m3u():
             current_extinf = line
         elif line.strip() and not line.startswith("#"):
             if current_extinf:
-                # ఒరిజినల్ సోర్స్ లోని ఛానల్ పేరును మాత్రమే విడదీస్తుంది (కామా తర్వాత ఉన్నది)
-                # ఉదాహరణ: "#EXTINF:-1 ...,ETV News (1080p)" -> "ETV News (1080p)"
+                # ఒరిజినల్ సోర్స్ లోని ఛానల్ పేరును కామా తర్వాత ఉన్న భాగం నుండి కచ్చితంగా వేరు చేస్తుంది
+                # ఉదాహరణ: "#EXTINF:-1 ...,10 TV (720p)" -> "10 TV (720p)"
                 channel_name = current_extinf.split(',')[-1].strip()
                 
                 matched_group = None
-                # ఎటువంటి మార్పులు లేకుండా కచ్చితమైన పేరు మ్యాచ్ (Exact Match) ఉందో లేదో చూస్తుంది
+                # ఎటువంటి లోయర్-కేస్ మార్పులు లేకుండా కచ్చితమైన పేరు మాత్రమే పోల్చి చూస్తుంది (Exact Match)
                 for group_name, channels in GROUPS_AND_CHANNELS.items():
                     if channel_name in channels:
                         matched_group = group_name
                         break
                 
-                # పేరు వంద శాతం మ్యాచ్ అయితేనే మీ కంప్లీట్ కస్టమ్ గ్రూప్ తో ఇన్సర్ట్ చేస్తుంది
+                # పేరు వంద శాతం మ్యాచ్ అయితేనే మీ కస్టమ్ గ్రూప్ పేరుతో ఫైల్ లోకి ఇన్సర్ట్ చేస్తుంది
                 if matched_group:
-                    # ఒరిజినల్ ఫైల్ లో ఉన్న పాత గ్రూప్ టైటిల్ ని పూర్తిగా తీసేస్తుంది
+                    # ఒరిజినల్ ఫైల్ లో ఉన్న పాత గ్రూప్ టైటిల్ ని పూర్తిగా డిలీట్ చేస్తుంది
                     cleaned_extinf = re.sub(r'\s*group-title="[^"]+"', '', current_extinf)
-                    # మీరు కోరుకున్న కస్టమ్ గ్రూప్ పేరును కొత్తగా యాడ్ చేస్తుంది
+                    # మీరు కోరుకున్న కస్టమ్ గ్రూప్ పేరును కొత్తగా చేర్చుతుంది
                     final_extinf = cleaned_extinf.replace('#EXTINF:', f'#EXTINF: group-title="{matched_group}"', 1)
                     
                     custom_playlist.append(final_extinf)
@@ -93,10 +93,10 @@ def fetch_and_filter_m3u():
                     
                 current_extinf = None
 
-    # 3. కొత్త ఫైల్‌ను సేవ్ చేయడం
+    # 3. కొత్త కస్టమ్ ఫైల్‌ను సేవ్ చేయడం
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(custom_playlist))
-    print(f"Successfully updated! Filtered exactly matching channels.")
+    print(f"Successfully updated! Filtered exactly matching channels into strict custom groups.")
 
 if __name__ == "__main__":
     fetch_and_filter_m3u()
