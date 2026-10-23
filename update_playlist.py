@@ -5,17 +5,42 @@ import re
 ORIGINAL_M3U_URL = "https://github.io"
 OUTPUT_FILE = "my_custom_playlist.m3u"
 
-# 2. Add your selected channel names here (Use lowercase text)
+# 2. మీ లిస్ట్‌లోని ఛానల్స్ (ఫిల్టరింగ్ సులువుగా అవ్వడానికి చిన్న అక్షరాలతో ఇవ్వబడ్డాయి)
 ALLOWED_CHANNELS = [
-    "hbo",
-    "star sports 1",
-    "discovery hd",
-    "etv telugu",
-    "maa tv",
-    "tv9 telugu",
-    "maa movies",
-    "gemini tv"
-    # Tip: You can expand this list by adding commas (,) and names in quotes
+    # 1. News Group
+    "10 tv", "abn andhra jyoti", "cvr news", "etv andhra pradesh", "etv news", 
+    "etv telangana", "hmtv", "inews", "mahaa news", "mojo tv", "ntv telugu", 
+    "prime9 news", "raj news telugu", "sakshi tv", "tv5 news", "tv9 telugu", 
+    "v6 news", "zee telugu news",
+    
+    # 2. Entertainment Group
+    "etv josh", "etv plus", "etv telugu hd", "etv telugu", "mahaa max", "mango mobile tv", 
+    "star maa hd", "star maa", "telugu one", "vanitha tv", "vissa tv", "zee telugu hd", 
+    "zee telugu", "sun gemini", "gemini tv",
+    
+    # 3. Movies Group
+    "etv cinema", "sony pix", "star maa movies", "studio one", "tolly tv",
+    
+    # 4. Kids / Animation
+    "cartoon network", "discovery kids", "disney channel", "disney junior", 
+    "etv bal bharat", "hungama tv", "nickelodeon", "sonic", "sony yay", 
+    "super hungama", "wow kidz telugu",
+    
+    # 5. Religious Group
+    "aastha telugu", "bhakthi tv", "cvr om spiritual", "hindu dharmam", 
+    "mahaa bhakti", "pmc telugu", "svbc",
+    
+    # 6. Music Group
+    "etv beats", "etv music", "raj musix telugu",
+    
+    # 7. General Group
+    "dd saptagiri",
+    
+    # 8. Documentary Group
+    "history tv18", "discovery channel", "national geographic", "sony bbc earth",
+    
+    # 10. Comedy Group
+    "etv comedy"
 ]
 
 def fetch_and_filter_m3u():
@@ -40,29 +65,32 @@ def fetch_and_filter_m3u():
             current_extinf = line
         elif line.strip() and not line.startswith("#"):
             if current_extinf:
-                # Extract the channel name after the last comma
+                # ఛానల్ పేరును వేరు చేసి చిన్న అక్షరాల్లోకి మారుస్తుంది
                 channel_name = current_extinf.split(',')[-1].strip().lower()
                 
-                # Check if the channel matches your allowed list
-                if any(allowed in channel_name for allowed in ALLOWED_CHANNELS):
-                    # Check if group-title already exists
+                # (1080p), (720p) లాంటి బ్రాకెట్ టెక్స్ట్‌లను తీసేసి కేవలం పేరును మాత్రమే చెక్ చేస్తుంది
+                clean_name = re.sub(r'\s*\([^)]*\)', '', channel_name).strip()
+                
+                # పేరు మ్యాచ్ అయిందో లేదో చెక్ చేస్తుంది
+                if any(allowed in clean_name for allowed in ALLOWED_CHANNELS):
+                    # ఒరిజినల్ గ్రూప్ టైటిల్ ఉందో లేదో చూస్తుంది
                     group_match = re.search(r'group-title="([^"]+)"', current_extinf)
                     
                     if group_match:
                         final_extinf = current_extinf
                     else:
-                        # Fallback group if iptv-org has no group for it
-                        final_extinf = current_extinf.replace('#EXTINF:', '#EXTINF: group-title="Custom Channels"', 1)
+                        # ఒకవేళ గ్రూప్ లేకపోతే "Telugu" గ్రూప్ కింద యాడ్ చేస్తుంది
+                        final_extinf = current_extinf.replace('#EXTINF:', '#EXTINF: group-title="Telugu"', 1)
                     
                     custom_playlist.append(final_extinf)
                     custom_playlist.append(line)
                     
                 current_extinf = None
 
-    # 3. Save the new filtered & grouped M3U file
+    # 3. కొత్త ఫైల్‌ను సేవ్ చేయడం
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(custom_playlist))
-    print(f"Successfully updated! Filtered and Grouped playlist created.")
+    print(f"Successfully updated! Your selected channels are filtered.")
 
 if __name__ == "__main__":
     fetch_and_filter_m3u()
