@@ -1,11 +1,11 @@
 import requests
 import re
 
-# 1. Source Link (12k+ world channels)
-ORIGINAL_M3U_URL = "https://github.io"
+# 1. ఖచ్చితమైన iptv-org ఒరిజినల్ సోర్స్ లింక్
+ORIGINAL_M3U_URL = "https://iptv-org.github.io/iptv/index.m3u"
 OUTPUT_FILE = "my_custom_playlist.m3u"
 
-# 2. మీ లిస్ట్‌లోని ఛానల్స్ (ఫిల్టరింగ్ సులువుగా అవ్వడానికి చిన్న అక్షరాలతో ఇవ్వబడ్డాయి)
+# 2. మీ లిస్ట్‌లో ఉన్న ఛానల్స్ (ఇవి కేస్-సెన్сиటివ్ కాకుండా కింద లోయర్-కేస్ లాజిక్ సెట్ చేశాను)
 ALLOWED_CHANNELS = [
     # 1. News Group
     "10 tv", "abn andhra jyoti", "cvr news", "etv andhra pradesh", "etv news", 
@@ -44,7 +44,7 @@ ALLOWED_CHANNELS = [
 ]
 
 def fetch_and_filter_m3u():
-    print("Fetching original 12k+ M3U playlist from iptv-org...")
+    print(f"Fetching original M3U from: {ORIGINAL_M3U_URL}")
     try:
         response = requests.get(ORIGINAL_M3U_URL, timeout=60)
         response.raise_for_status()
@@ -65,21 +65,20 @@ def fetch_and_filter_m3u():
             current_extinf = line
         elif line.strip() and not line.startswith("#"):
             if current_extinf:
-                # ఛానల్ పేరును వేరు చేసి చిన్న అక్షరాల్లోకి మారుస్తుంది
-                channel_name = current_extinf.split(',')[-1].strip().lower()
+                # ఒరిజినల్ లైన్ లోని ఛానల్ పేరును కామా (,) తర్వాత నుండి తీసుకుంటుంది
+                # ఉదాహరణ: #EXTINF:-1 ..., 10 TV (720p) -> '10 TV (720p)'
+                channel_name = current_extinf.split(',')[-1].strip()
                 
-                # (1080p), (720p) లాంటి బ్రాకెట్ టెక్స్ట్‌లను తీసేసి కేవలం పేరును మాత్రమే చెక్ చేస్తుంది
-                clean_name = re.sub(r'\s*\([^)]*\)', '', channel_name).strip()
+                # పోల్చడానికి వీలుగా ఒరిజినల్ ఛానల్ పేరును పూర్తిగా చిన్న అక్షరాల్లోకి మారుస్తుంది
+                # '10 TV (720p)' -> '10 tv (720p)'
+                lowercased_name = channel_name.lower()
                 
-                # పేరు మ్యాచ్ అయిందో లేదో చెక్ చేస్తుంది
-                if any(allowed in clean_name for allowed in ALLOWED_CHANNELS):
-                    # ఒరిజినల్ గ్రూప్ టైటిల్ ఉందో లేదో చూస్తుంది
+                # కేస్-సెన్సిటివ్ సమస్య రాకుండా ఉండటానికి, రెండు వైపులా చిన్న అక్షరాలనే పోల్చుతుంది
+                if any(allowed in lowercased_name for allowed in ALLOWED_CHANNELS):
+                    # గ్రూప్ టైటిల్ చెక్ చేసి, లేకపోతే 'Telugu' అని యాడ్ చేస్తుంది
                     group_match = re.search(r'group-title="([^"]+)"', current_extinf)
-                    
-                    if group_match:
-                        final_extinf = current_extinf
-                    else:
-                        # ఒకవేళ గ్రూప్ లేకపోతే "Telugu" గ్రూప్ కింద యాడ్ చేస్తుంది
+                    final_extinf = current_extinf
+                    if not group_match:
                         final_extinf = current_extinf.replace('#EXTINF:', '#EXTINF: group-title="Telugu"', 1)
                     
                     custom_playlist.append(final_extinf)
@@ -90,7 +89,7 @@ def fetch_and_filter_m3u():
     # 3. కొత్త ఫైల్‌ను సేవ్ చేయడం
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(custom_playlist))
-    print(f"Successfully updated! Your selected channels are filtered.")
+    print(f"Successfully updated! Filtered playlist created.")
 
 if __name__ == "__main__":
     fetch_and_filter_m3u()
