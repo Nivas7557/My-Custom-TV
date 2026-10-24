@@ -101,7 +101,6 @@
             scrollbar-width: none;
         }
 
-        /* Android TV Remote Focus & Leanback Layout Styles */
         body.tv-mode-active {
             font-size: 115%;
             background: #020617;
@@ -169,10 +168,6 @@
                 <i data-lucide="monitor" class="w-4 h-4"></i>
                 <span>Switch Mode</span>
             </button>
-            <button class="p-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 rounded-xl transition relative">
-                <i data-lucide="bell" class="w-4 h-4"></i>
-                <span class="absolute top-2 right-2 w-1.5 h-1.5 bg-brand-pink rounded-full"></span>
-            </button>
         </div>
     </header>
 
@@ -201,6 +196,16 @@
                         <i data-lucide="film" class="w-4 h-4"></i>
                         <span>TV Series</span>
                     </button>
-                    <button class="nav-item flex items-center space-x-3 w-full px-3 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900/60 font-medium text-xs transition">
-                        <i data-lucide="heart" class="w-4 h-4"></i>
-                        <span>Favorites</span>
+                </div>
+            </div>
+
+            <div class="px-4 py-3 mx-3 bg-slate-900/50 rounded-xl border border-slate-800/80 space-y-2">
+                <p class="text-[10px] font-bold text-slate-500 tracking-wider uppercase">Default Playlist</p>
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-400">Channels:</span>
+                    <span id="metaTotalChannels" class="font-bold font-mono text-emerald-400">74</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Right Core Application View Area -->
