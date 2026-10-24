@@ -1,0 +1,2 @@
+# మెయిన్ మరియు బాకప్ IPTV లింకులు
+SOURCE_M3U_URL=https://iptv-org.github.io/iptv/index.m3u
