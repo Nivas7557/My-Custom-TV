@@ -1,0 +1,15 @@
+# =========================================================================
+# 📝 INSTRUCTIONS / సూచనలు:
+# 1. Add your desired groups in brackets like [Group Name].
+#    మీకు కావలసిన గ్రూప్ పేరును ఇలా బ్రాకెట్లలో [గ్రూప్ పేరు] ఇవ్వండి.
+# 2. List the exact channel names under their respective groups.
+#    ఛానల్స్ పేర్లను స్పెల్లింగ్ తప్పులు లేకుండా గ్రూప్ కింద లైన్‌గా రాయండి.
+# =========================================================================
+
+[Sports Channels]
+Star Sports 1 (720p)
+Star Sports 2 (720p)
+
+[Entertainment Group]
+Star Maa HD (720p)
+Zee Telugu HD (576p)
