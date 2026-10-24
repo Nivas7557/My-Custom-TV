@@ -1,0 +1,25 @@
+[Sports Channels]
+Star Sports 1 (720p)
+Star Sports 2 (720p)
+Sports18 (720p)
+Eurosport (720p)
+DD Sports (1080p)
+beIN SPORTS XTRA (1080p)
+
+[Entertainment Group]
+Star Maa HD (720p)
+Zee Telugu HD (576p)
+Sun Gemini (576p)
+ETV Telugu HD (1080p)
+ETV Plus (396p)
+
+[Movies Group]
+Star Maa Movies HD (720p)
+ETV Cinema HD (1080p)
+Tolly TV (1080p)
+
+[News Group]
+TV9 Telugu (720p)
+NTV Telugu (1080p)
+ETV Andhra Pradesh (1080p)
+ETV Telangana (1080p)
