@@ -2,15 +2,15 @@ import requests
 import re
 import os
 
-# ఫైల్ పాత్స్ కాన్ఫిగరేషన్
+# Path configurations traversing backwards out of testing_folder into the parent directory
 FILTER_TXT_FILE = os.path.join("..", "channels_filter.txt")
 SOURCES_TXT_FILE = os.path.join("..", "source_links.txt")
 OUTPUT_FILE = os.path.join("..", "my_custom_playlist.m3u")
 
 def load_source_urls():
-    """source_links.txt ఫైల్ నుండి అన్ని URLలను ఒక లిస్ట్‌గా లోడ్ చేసే ఫంక్షన్"""
+    """Reads all target M3U URLs listed inside source_links.txt."""
     if not os.path.exists(SOURCES_TXT_FILE):
-        print(f"Error: మెయిన్ ఫోلడర్ లో '{SOURCES_TXT_FILE}' ఫైల్ దొరకలేదు!")
+        print(f"Error: Required file missing at '{SOURCES_TXT_FILE}'!")
         return []
     
     urls = []
@@ -23,9 +23,9 @@ def load_source_urls():
     return urls
 
 def load_channels_from_txt():
-    """channels_filter.txt ఫైల్ లోంచి గ్రూపులను, ఛానల్స్ లిస్ట్‌ను లోడ్ చేసే ఫంక్షన్"""
+    """Parses target categories and channel strings from channels_filter.txt."""
     if not os.path.exists(FILTER_TXT_FILE):
-        print(f"Error: మెయిన్ ఫోల్డర్ లో '{FILTER_TXT_FILE}' ఫైల్ దొరకలేదు!")
+        print(f"Error: Required file missing at '{FILTER_TXT_FILE}'!")
         return None
         
     groups_and_channels = {}
@@ -45,33 +45,28 @@ def load_channels_from_txt():
     return groups_and_channels
 
 def fetch_and_filter_m3u():
-    # 1. ఫైల్స్ లోడ్ చేయడం
     source_urls = load_source_urls()
     groups_and_channels = load_channels_from_txt()
     
     if not source_urls:
-        print("Error: 'source_links.txt' లో ఎలాంటి URL లింకులు దొరకలేదు!")
+        print("Error: No valid playlist source URLs detected inside source_links.txt!")
         return
     if not groups_and_channels:
         return
 
     print(f"Found {len(source_urls)} source links to process.")
-    print(f"Loaded {len(groups_and_channels)} groups from filter text file.")
+    print(f"Loaded {len(groups_and_channels)} category groupings from tracking file.")
     
     custom_playlist = ["#EXTM3U"]
+    saved_channels = set()  # Tracks added items to guarantee strict uniqueness
     
-    # డూప్లికేట్స్ రాకుండా ట్రాక్ చేయడానికి ఒక 'Set' ని వాడుతున్నాం.
-    # ఇందులో రికార్డ్ అయిన ఛానల్ మళ్లీ ప్లేలిస్ట్ లోకి యాడ్ అవ్వదు.
-    saved_channels = set()
-    
-    # 2. ప్రతి URL నుండి డేటాను సేకరించడం (Looping through all URLs)
     for url in source_urls:
-        print(f"\nFetching data from: {url}")
+        print(f"\nProcessing streams from network address: {url}")
         try:
             response = requests.get(url, timeout=60)
             response.raise_for_status()
         except Exception as e:
-            print(f"Skipping link due to error: {e}")
+            print(f"Skipping server path due to connection exception: {e}")
             continue
 
         lines = response.text.splitlines()
@@ -88,7 +83,7 @@ def fetch_and_filter_m3u():
                 if current_extinf:
                     channel_name = current_extinf.split(',')[-1].strip()
                     
-                    # డూప్లికేట్ చెక్: ఈ ఛానల్ ఆల్రెడీ యాడ్ అయి ఉంటే స్కిప్ చేసేస్తుంది
+                    # Deduplication guardrail condition
                     if channel_name in saved_channels:
                         current_extinf = None
                         continue
@@ -112,18 +107,17 @@ def fetch_and_filter_m3u():
                         custom_playlist.append(final_extinf)
                         custom_playlist.append(line)
                         
-                        # ఛానల్ ని సెట్ లో సేవ్ చేసుకుంటున్నాం (ట్రాకింగ్ కోసం)
                         saved_channels.add(channel_name)
                         channels_found_in_this_link += 1
                         
                     current_extinf = None
                     
-        print(f"Found and added {channels_found_in_this_link} unique channels from this source.")
+        print(f"Successfully processed {channels_found_in_this_link} new unique channels from this path.")
 
-    # 3. ఫైనల్ ఫైల్ సేవ్ చేయడం
+    # Save finalized export to the parent directory file path
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(custom_playlist))
-    print(f"\n[DONE] Processing complete! Final unique playlist saved at: '{OUTPUT_FILE}'")
+    print(f"\n[DONE] Finished bundling playlist. Clean file generated at: '{OUTPUT_FILE}'")
 
 if __name__ == "__main__":
     fetch_and_filter_m3u()
