@@ -2,7 +2,7 @@ import requests
 import re
 
 # Source endpoint and requested output filename
-ORIGINAL_M3U_URL = "https://iptv-org.github.io/iptv/index.m3u"
+ORIGINAL_M3U_URL = "https://github.io"
 OUTPUT_FILE = "Normalized Channels.m3u"
 
 # Target channel mapping configuration
@@ -64,7 +64,7 @@ def create_lookup_map():
     for g_idx, (group_name, channels) in enumerate(GROUPS_AND_CHANNELS.items(), start=1):
         for ch_idx, ch_name in enumerate(channels, start=1):
             norm_key = normalize_text(ch_name)
-            channel_num = (g_idx * 100) + ch_index = ch_idx
+            channel_num = (g_idx * 100) + ch_idx
             mapping[norm_key] = (group_name, channel_num)
     return mapping
 
