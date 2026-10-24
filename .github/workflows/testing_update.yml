@@ -1,0 +1,45 @@
+# =========================================================================
+# 🤖 GITHUB ACTIONS AUTOMATION CONFIGURATION (TESTING ENVIRONMENT)
+# 📝 సూచన: ఈ వర్క్‌ఫ్లో ప్రతిరోజూ ఉదయం 7:30 AM (IST) కి ఆటోమేటిక్‌గా రన్ అవుతుంది.
+# =========================================================================
+
+name: Multi-Source IPTV Testing Environment Update
+
+on:
+  schedule:
+    # Time zone is UTC (02:00 UTC = 07:30 AM IST)
+    - cron: '0 2 * * *'
+  workflow_dispatch: # GitHub పేజీలో మాన్యువల్ రన్ బటన్ కనిపిస్తుంది
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. రిపోజిటరీ లోని ఫైల్స్ ని క్లౌడ్ సర్వర్ లోకి తెస్తుంది
+    - name: Checkout Repository Code
+      uses: actions/checkout@v4
+
+    # 2. పైథాన్ ఎన్విరాన్‌మెంట్‌ను సెట్ చేస్తుంది
+    - name: Set up Python environment
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    # 3. కోడ్‌కి కావలసిన రిక్వెస్ట్స్ లైబ్రరీని ఇన్‌స్టాల్ చేస్తుంది
+    - name: Install Requests Library
+      run: pip install requests
+
+    # 4. టెస్టింగ్ ఫోల్డర్ లోపలికి వెళ్లి పైథాన్ స్క్రిప్ట్ రన్ చేస్తుంది
+    - name: Run Script inside testing folder
+      run: |
+        cd testing_folder
+        python filter_script.py
+
+    # 5. జనరేట్ అయిన కొత్త ప్లేలిస్ట్‌ను తిరిగి మీ GitHub రిపోజిటరీ లోకి పుష్ చేస్తుంది
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "GitHub Action Bot"
+        git config --global user.email "actions@github.com"
+        git add testing_folder/
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-updated unique playlist inside testing folder" && git push)
