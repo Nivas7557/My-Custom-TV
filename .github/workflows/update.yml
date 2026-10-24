@@ -3,7 +3,7 @@ name: Auto Update Custom M3U
 on:
   schedule:
     # Runs automatically every 6 hours
-    - cron: '5 * * * *'
+    - cron: '0 */6 * * *'
   workflow_dispatch: # Allows manual trigger button
 
 # ఈ కింద ఉన్న లైన్స్ యాడ్ చేశాము - దీనివల్ల GitHub కి ఫైల్స్ అప్‌డేట్ చేసే పర్మిషన్ వస్తుంది
