@@ -2,7 +2,7 @@ import requests
 import re
 
 # Source endpoint and requested output filename
-ORIGINAL_M3U_URL = "https://github.io"
+ORIGINAL_M3U_URL = "https://iptv-org.github.io/iptv/index.m3u"
 OUTPUT_FILE = "Normalized Channels.m3u"
 
 # Target channel mapping configuration
