@@ -10,11 +10,11 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <!-- HLS.js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://jsdelivr.net"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
 
     <script>
         tailwind.config = {
@@ -101,28 +101,6 @@
             scrollbar-width: none;
         }
 
-        /* Mini-player */
-        .video-mini-player {
-            position: fixed !important;
-            z-index: 60 !important;
-            width: 30vw !important;
-            height: 40vh !important;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(99, 102, 241, 0.5) !important;
-            border-color: rgba(99, 102, 241, 0.9) !important;
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
-            cursor: pointer;
-        }
-
-        .video-mini-player.pos-top-right { top: 1rem !important; right: 1rem !important; }
-        .video-mini-player.pos-top-left { top: 1rem !important; left: 1rem !important; }
-        .video-mini-player.pos-bottom-right { bottom: 1rem !important; right: 1rem !important; }
-        .video-mini-player.pos-bottom-left { bottom: 1rem !important; left: 1rem !important; }
-
-        .video-mini-player .absolute.inset-x-0,
-        .video-mini-player .absolute.top-3 { display: none !important; }
-        .preview-label-tag { display: none; }
-        .video-mini-player .preview-label-tag { display: flex !important; }
-
         /* Android TV Remote Focus & Leanback Layout Styles */
         body.tv-mode-active {
             font-size: 115%;
@@ -191,31 +169,38 @@
                 <i data-lucide="monitor" class="w-4 h-4"></i>
                 <span>Switch Mode</span>
             </button>
+            <button class="p-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 rounded-xl transition relative">
+                <i data-lucide="bell" class="w-4 h-4"></i>
+                <span class="absolute top-2 right-2 w-1.5 h-1.5 bg-brand-pink rounded-full"></span>
+            </button>
         </div>
     </header>
 
-    <main class="flex-1 flex overflow-hidden">
-        <!-- Dashboard Content Area -->
-        <div id="mainContent" class="flex-1 overflow-y-auto px-4 py-6 lg:px-8">
-            <div id="dashboardSection" class="view-section active flex-col space-y-6">
-                <!-- Status Row -->
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                    <div class="glass-card p-4 rounded-2xl flex items-center space-x-4">
-                        <div class="p-3 bg-brand-500/10 rounded-xl text-brand-500">
-                            <i data-lucide="tv" class="w-6 h-6"></i>
-                        </div>
-                        <div>
-                            <p class="text-sm font-bold text-slate-400">Channels</p>
-                            <h3 id="dashChannelsCount" class="text-xl font-black">0</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Playlist Input Block -->
-                <div class="glass-panel p-6 rounded-2xl space-y-4">
-                    <h2 class="text-lg font-bold flex items-center space-x-2">
-                        <i data-lucide="list-music" class="text-brand-accent w-5 h-5"></i>
-                        <span>M3U Playlist Source Manager</span>
-                    </h2>
-                    <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3">
-                        <input type="text" id="playlistUrlInput" placeholder="Paste raw M3U / M3U8 URL here..." 
+    <!-- Main Container Interface Shell -->
+    <div class="flex-1 flex overflow-hidden relative">
+        
+        <!-- Left Side Navigation Bar -->
+        <aside id="mainSidebar" class="hidden lg:flex flex-col w-64 glass-panel shrink-0 border-r border-slate-800/85 transition-all duration-300 z-30 justify-between py-4">
+            <div class="space-y-6 px-3">
+                <div class="space-y-1">
+                    <p class="px-3 text-[10px] font-bold text-slate-500 uppercase tracking-widest">Navigation</p>
+                    <button class="nav-item flex items-center space-x-3 w-full px-3 py-2.5 rounded-xl bg-gradient-to-r from-brand-600/20 to-transparent border border-brand-500/20 text-white font-semibold text-xs transition">
+                        <i data-lucide="layout-dashboard" class="w-4 h-4 text-brand-accent"></i>
+                        <span>Dashboard Home</span>
+                    </button>
+                    <button class="nav-item flex items-center space-x-3 w-full px-3 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900/60 font-medium text-xs transition">
+                        <i data-lucide="tv" class="w-4 h-4"></i>
+                        <span>Live TV Streams</span>
+                        <span id="badgeLiveCount" class="ml-auto text-[10px] px-2 py-0.5 rounded-md bg-slate-800 text-slate-400 font-bold border border-slate-700/60">74</span>
+                    </button>
+                    <button class="nav-item flex items-center space-x-3 w-full px-3 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900/60 font-medium text-xs transition">
+                        <i data-lucide="clapperboard" class="w-4 h-4"></i>
+                        <span>Movies (VOD)</span>
+                    </button>
+                    <button class="nav-item flex items-center space-x-3 w-full px-3 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900/60 font-medium text-xs transition">
+                        <i data-lucide="film" class="w-4 h-4"></i>
+                        <span>TV Series</span>
+                    </button>
+                    <button class="nav-item flex items-center space-x-3 w-full px-3 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900/60 font-medium text-xs transition">
+                        <i data-lucide="heart" class="w-4 h-4"></i>
+                        <span>Favorites</span>
