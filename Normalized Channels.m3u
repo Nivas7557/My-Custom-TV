@@ -120,10 +120,10 @@ https://amc-amcespanol-1-us.lg.wurl.tv/playlist.m3u8
 http://hls127.freeott.top:8080/BG_AMC/video.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="407" tvg-id="AMCEurope.uk@CzechRepublic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",AMC Europe Czech Republic
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-http://88.212.15.17/live/test_amc_25p/playlist.m3u8
+http://88.212.7.14/live/test_amc_25p/playlist.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="407" tvg-id="AMCEurope.uk@Hungary" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",AMC Europe Hungary
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-http://88.212.15.17/live/amc_hun/index.m3u8
+http://88.212.7.14/live/amc_hun/index.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="407" tvg-id="AMCEurope.uk@Romania" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" http-referrer="https://cool-tv.net/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18",AMC Europe Romania
 #EXTVLCOPT:http-referrer=https://cool-tv.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18
@@ -244,7 +244,7 @@ http://149.100.11.252:8000/play/a056/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
 https://cdn4.skygo.mn/live/disk1/Cartoon_Network/HLSv3-FTA/Cartoon_Network.m3u8
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="801" tvg-id="CartoonNetworkCEE.uk@CzechRepublic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",Cartoon Network CEE Czech Republic
-http://88.212.15.17/live/test_cartoon_network_tizen/playlist.m3u8
+http://88.212.7.14/live/test_cartoon_network_tizen/playlist.m3u8
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="801" tvg-id="CartoonNetworkCEE.uk@Poland" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",Cartoon Network CEE Poland
 http://92.114.85.87:8007/play/a009
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="801" tvg-id="CartoonNetworkCEE.uk@Ukraine" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",Cartoon Network CEE Ukraine (576p)
@@ -336,9 +336,9 @@ https://cdn4.skygo.mn/live/disk1/CinemaTV/DASH-FTA/CinemaTV.mpd
 #EXTINF:-1 group-title="Movies Group" tvg-chno="302" tvg-id="Cinema.ru@SD" tvg-logo="https://i.imgur.com/b5e9qUA.png",Cinema (Russia) (576p)
 http://flussonic.linkintel.ru/cinema/index.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="406" tvg-id="Cinemax2.cz@Czechia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Cinemax_2_%282016%29.png/960px-Cinemax_2_%282016%29.png",Cinemax 2
-http://88.212.15.17/live/test_cinemax2_hd_hevc/playlist.m3u8
+http://88.212.15.50/live/test_cinemax2_hd_hevc/playlist.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="406" tvg-id="Cinemax.cz@Czechia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Cinemax_2016.svg/960px-Cinemax_2016.svg.png",Cinemax (Czech Republic)
-http://88.212.15.17/live/test_cinemax_hd_hevc/playlist.m3u8
+http://88.212.15.50/live/test_cinemax_hd_hevc/playlist.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="406" tvg-id="Cinemax.us@West" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Cinemax_2016.svg/960px-Cinemax_2016.svg.png",Cinemax (United States) West (720p)
 http://23.237.104.106:8080/USA_CINEMAX_WEST/index.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="406" tvg-id="CinemaxAsia.sg@SD" tvg-logo="https://i.imgur.com/c8crJfA.png",Cinemax Asia (720p) [Geo-blocked]
@@ -374,7 +374,7 @@ https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/canalplus/cnew
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="CNNNews18.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s142747_ld_h15_aa.png?lock=720x540",CNN News 18 (1080p)
 https://n18syndication.akamaized.net/bpk-tv/CNN_News18_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="CNNPrimaNews.cz@SD" tvg-logo="https://i.imgur.com/elZyUjX.png",CNN Prima News (1080p)
-http://88.212.15.17/live/test_cnn_pirma_news/playlist.m3u8
+http://88.212.15.50/live/test_cnn_pirma_news/playlist.m3u8
 #EXTINF:-1 group-title="Music Group" tvg-chno="603" tvg-id="CNTMasTV.do@HD" tvg-logo="https://dominicanchannels.com/wp-content/uploads/ctnmas.jpg",CNT Mas TV (720p) [Not 24/7]
 https://edge.essastream.com/cntmas/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="407" tvg-id="ComedyDynamics.us@SD" tvg-logo="https://i.imgur.com/1lEvUOa.png",Comedy Dynamics (1080p)
@@ -406,9 +406,9 @@ https://cdn.pishow.tv/ott/live/1161/master.m3u8
 #EXTINF:-1 group-title="Music Group" tvg-chno="603" tvg-id="DemaisTV.br@SD" tvg-logo="https://i.imgur.com/Md3xibE.png",Demais TV (720p)
 https://cdn-tiva-stmv1-samcast-com-br.smartbit.co/demaistv6503/demaistv6503/playlist.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1003" tvg-id="DiscoveryChannel.cz@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/27/Discovery_Channel_2019_symbol.svg/revision/latest?cb=20210804150956",Discovery Channel (Czech Republic)
-http://88.212.15.17/live/test_discovery_hd_hevc/playlist.m3u8
+http://88.212.15.50/live/test_discovery_hd_hevc/playlist.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1003" tvg-id="DiscoveryChannel.hu@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2019_Discovery_logo.svg/960px-2019_Discovery_logo.svg.png",Discovery Channel (Hungary)
-http://88.212.15.17/live/discovery_hungary/index.m3u8
+http://88.212.7.14/live/discovery_hungary/index.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1003" tvg-id="DiscoveryChannel.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002E9L1W.png?lock=720x540",Discovery Channel (India) (720p)
 https://drk6xq0vhn.gpcdn.net/live/discovery_sd_abr/index.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1003" tvg-id="DiscoveryChannel.in@HD" tvg-logo="https://dtil.tmsimg.com/assets/s159106_ld_h15_aa.png?lock=720x540",Discovery Channel (India) HD (720p)
@@ -439,12 +439,14 @@ http://38.65.175.84:8000/play/a0an/index.m3u8
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="804" tvg-id="DisneyChannel.bg@SD" tvg-logo="https://i.imgur.com/UxrAiAe.png",Disney Channel (Bulgaria) (576i)
 http://87.120.179.187:8000/play/a010
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="804" tvg-id="DisneyChannel.cz@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/2022_Disney_Channel_logo.svg",Disney Channel (Czech Republic)
-http://88.212.15.17/live/test_disney/playlist.m3u8
+http://88.212.15.50/live/test_disney/playlist.m3u8
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="804" tvg-id="DisneyChannel.de@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/2022_Disney_Channel_logo.svg",Disney Channel (Germany) (576p)
 https://s6.hopslan.com/disneyX/index.m3u8
+#EXTINF:-1 group-title="Kids / Animation" tvg-chno="804" tvg-id="DisneyChannel.de@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/2022_Disney_Channel_logo.svg",Disney Channel (Germany) HD
+http://109.85.181.77:9981/stream/channelid/652495718?profile=pass
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="804" tvg-id="DisneyChannel.hu@SD" tvg-logo="https://i.imgur.com/aOa73uT.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",Disney Channel (Hungary)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-http://88.212.15.17/live/disney_channel_hun/index.m3u8
+http://88.212.7.14/live/disney_channel_hun/index.m3u8
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="804" tvg-id="DisneyChannel.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DISNEY_CHANNEL_HD/images/LOGO_HD/image.png",Disney Channel (India) HD (1080p)
 http://66.102.126.10:8000/play/a013/index.m3u8
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="804" tvg-id="DisneyChannel.nl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/2022_Disney_Channel_logo.svg" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",Disney Channel (Netherlands) (360p)
@@ -473,7 +475,7 @@ http://45.134.141.161:2200/ARG/Disney_Channel/index.m3u8
 https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/disney-channel-key/chunks.m3u8
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="805" tvg-id="DisneyJunior.cz@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",Disney Junior (Czech Republic)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-http://88.212.15.17/live/test_disney_junior/playlist.m3u8
+http://88.212.15.50/live/test_disney_junior/playlist.m3u8
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="805" tvg-id="DisneyJunior.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DISNEY_JUNIOR/images/LOGO_HD/image.png",Disney Junior (India) (576p)
 http://103.151.60.162:2122/play/a016/index.m3u8?hls
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="805" tvg-id="DisneyJunior.ro@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg" http-referrer="https://cool-tv.net/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18",Disney Junior (Romania)
@@ -586,7 +588,7 @@ https://cdn-euronews.akamaized.net/live/eds/euronews-ru/25071/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="EuronewsSpanish.fr@SD" tvg-logo="https://i.imgur.com/8t9mdg9.png",Euronews Spanish (1080p)
 https://iptv.bitred.cl/euronews/index.m3u8
 #EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport1.fr@Hungary" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Hungary
-http://88.212.15.17/live/esp1_hun/index.m3u8
+http://88.212.7.14/live/esp1_hun/index.m3u8
 #EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport1.fr@Russia" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Russia (1080p)
 http://stream.mcquack.net/176/index.m3u8
 #EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport1.fr@Turkiye" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Turkiye
@@ -594,7 +596,7 @@ https://andro.mangeinde4.lat/checklist/androstreamlivees1.m3u8
 #EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport1Polska.pl@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e7/Eurosport_1_2022.svg/revision/latest?cb=20220806090310",Eurosport 1 Polska (1080p)
 http://57.128.210.196:8080/264/index.m3u8
 #EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport2.fr@Hungary" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Hungary
-http://88.212.15.17/live/esp2_hun/index.m3u8
+http://88.212.7.14/live/esp2_hun/index.m3u8
 #EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport2.fr@Russia" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Russia (1080p)
 http://stream.mcquack.net/192/index.m3u8
 #EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport2.fr@Turkiye" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Turkiye
@@ -606,7 +608,7 @@ http://57.128.210.196:8080/263/index.m3u8
 http://91.228.35.249:8001/1:0:1:3D:1964:13E:820000:0:0:0
 #EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport4KCzechia.cz@UHD" tvg-logo="https://i.imgur.com/0o3zjC7.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",Eurosport 4K Czechia
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-http://88.212.15.17/live/esp_4k_atk/playlist.m3u8
+http://88.212.15.50/live/esp_4k_atk/playlist.m3u8
 #EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002E9LQS.png?lock=720x540",Eurosport (720p)
 https://drk6xq0vhn.gpcdn.net/live/euro_sports_hd_abr/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="ExtraProNews.gr@SD" tvg-logo="https://i.imgur.com/VKW9xw6.png",Extra ProNews (576p)
@@ -648,13 +650,13 @@ https://cdn.haititivi.com/website/haitinews/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="HarbinComprehensiveNewsChannel.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/haerbin.jpg",Harbin Comprehensive News Channel
 https://stream.hrbtv.net/xwzh/playlist.m3u8?_upt=ef41dd531755913594
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="401" tvg-id="HBO2.cz@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/8f/HBO_2_%28Metallic%29.png/revision/latest/scale-to-width-down/1000?cb=20190715122226",HBO 2
-http://88.212.15.17/live/test_hbo2_hd_hevc/playlist.m3u8
+http://88.212.15.50/live/test_hbo2_hd_hevc/playlist.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="401" tvg-id="HBO2LatinAmerica.us@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/HBO2_logo.svg/960px-HBO2_logo.svg.png",HBO 2 Latin America HD (1080p)
 http://45.171.64.30:6060/play/a00i/index.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="401" tvg-id="HBO3.cz@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6f/HBO_3_%28Metallic%29.png/revision/latest/scale-to-width-down/1000?cb=20190715122202",HBO 3
-http://88.212.15.17/live/test_hbo3_hd_hevc/playlist.m3u8
+http://88.212.15.50/live/test_hbo3_hd_hevc/playlist.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="401" tvg-id="HBO.cz@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/a9/HBO_Silver_glossy_logo.svg/revision/latest?cb=20260529155924",HBO (Czech Republic)
-http://88.212.15.17/live/test_hbo_hd_hevc/playlist.m3u8
+http://88.212.15.50/live/test_hbo_hd_hevc/playlist.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="401" tvg-id="HBO.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/960px-HBO_logo.svg.png",HBO (United States) (720p)
 http://tvsen7.aynascope.net/hbo/index.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="401" tvg-id="HBOAsia.sg@SD" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/HBO_Asia.png/960px-HBO_Asia.png",HBO Asia SD (720p) [Geo-blocked]
@@ -692,10 +694,10 @@ http://45.177.114.114/HISTORY/index.m3u8
 http://213.91.179.28:8000/play/a0c1
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1005" tvg-id="History.cz@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3",History (Czech Republic)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-http://88.212.15.17/live/test_history/playlist.m3u8
+http://88.212.15.50/live/test_history/playlist.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1005" tvg-id="History.hu@SD" tvg-logo="https://i.imgur.com/OWIK7FJ.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",History (Hungary)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-http://88.212.15.17/live/history_hun/index.m3u8
+http://88.212.7.14/live/history_hun/index.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1005" tvg-id="History.nl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png",History (Netherlands) (360p)
 https://lb.iptvnetwork.net/ls28/10022/playlist.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1005" tvg-id="History.pl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png",History (Poland) (576i)
@@ -905,12 +907,12 @@ http://hls127.freeott.top:8080/BG_Nat_Geo_HD/video.m3u8
 http://176.61.157.250/NationalGeographic/index.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1001" tvg-id="NationalGeographic.cz@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",National Geographic (Czech Republic)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-http://88.212.15.17/live/test_ngc/playlist.m3u8
+http://88.212.15.50/live/test_ngc/playlist.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1001" tvg-id="NationalGeographic.fi@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png",National Geographic (Finland) (720p) [Geo-blocked]
 https://live-fi.tvkaista.net/national-geographic/live.m3u8?hd=true
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1001" tvg-id="NationalGeographic.hu@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",National Geographic (Hungary)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-http://88.212.15.17/live/ngc_hun/index.m3u8
+http://88.212.7.14/live/ngc_hun/index.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1001" tvg-id="NationalGeographic.mx@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png",National Geographic (Mexico) (1080p)
 http://138.121.15.230:9002/NAT-GEO/index.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1001" tvg-id="NationalGeographic.nl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",National Geographic (Netherlands) (360p)
@@ -940,10 +942,10 @@ http://15.204.246.24:8080/NatGeoHD/index.m3u8
 http://hls127.freeott.top:8080/BG_NG_Wild_HD/video.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1001" tvg-id="NationalGeographicWild.cz@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Geographic_Wild_logo.svg/960px-National_Geographic_Wild_logo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",National Geographic Wild (Czech Republic)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-http://88.212.15.17/live/test_ngw/playlist.m3u8
+http://88.212.15.50/live/test_ngw/playlist.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1001" tvg-id="NationalGeographicWild.hu@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Geographic_Wild_logo.svg/960px-National_Geographic_Wild_logo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",National Geographic Wild (Hungary)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-http://88.212.15.17/live/ngw_hun/index.m3u8
+http://88.212.7.14/live/ngw_hun/index.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1001" tvg-id="NationalGeographicWild.pl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Geographic_Wild_logo.svg/960px-National_Geographic_Wild_logo.svg.png",National Geographic Wild (Poland) (576i)
 http://92.114.85.87:8010/play/a005/index.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1001" tvg-id="NationalGeographicWild.ro@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Geographic_Wild_logo.svg/960px-National_Geographic_Wild_logo.svg.png" http-referrer="https://cool-tv.net/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18",National Geographic Wild (Romania)
@@ -1130,7 +1132,7 @@ http://hls127.freeott.top:8080/BG_Nickelodeon/video.m3u8
 http://176.61.157.250/Nickelodeon/index.m3u8
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="802" tvg-id="Nickelodeon.cz@SD" tvg-logo="https://i.imgur.com/E84jnP8.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",Nickelodeon (Czech Republic)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-http://88.212.15.17/live/test_nickelodeon_hevc_25p/playlist.m3u8
+http://88.212.15.50/live/test_nickelodeon_hevc_25p/playlist.m3u8
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="802" tvg-id="Nickelodeon.fr@SD" tvg-logo="https://i.imgur.com/E84jnP8.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",Nickelodeon (France) (504p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36
 http://151.80.18.177:86/Nickelodeon_FR/index.m3u8
@@ -1138,7 +1140,7 @@ http://151.80.18.177:86/Nickelodeon_FR/index.m3u8
 https://ma.anixa.tv/clips/stream/nickelodeon/playlist.php
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="802" tvg-id="Nickelodeon.hu@SD" tvg-logo="https://i.imgur.com/fXs8f6a.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",Nickelodeon (Hungary)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-http://88.212.15.17/live/test_nickelodeon_hu_1200_atk/playlist.m3u8
+http://88.212.7.14/live/test_nickelodeon_hu_1200_atk/playlist.m3u8
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="802" tvg-id="Nickelodeon.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NICK/images/LOGO_HD/image.png",Nickelodeon (India) (576p)
 http://103.185.24.134:3001/NICK/index.m3u8
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="802" tvg-id="Nickelodeon.it@SD" tvg-logo="https://i.imgur.com/E84jnP8.png",Nickelodeon (Italy)
@@ -1225,7 +1227,7 @@ http://23.237.104.106:8080/USA_OAN/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="OraNews.al@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Ora_News_%28Albania%29.svg/960px-Ora_News_%28Albania%29.svg.png",Ora News (720p)
 https://live1.mediadesk.al/oranews.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="716" tvg-id="OTV.ee@SD" tvg-logo="https://web02.antik.sk/assets/img/channels/5c4e6aadc3255df82fedf3221570cdb5.svg",OTV (Estonia)
-http://88.212.15.17/live/otv/playlist.m3u8
+http://88.212.7.14/live/otv/playlist.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="716" tvg-id="OTV.gh@SD" tvg-logo="https://pbs.twimg.com/profile_images/1034118312437919744/emeWo-ag_400x400.jpg",OTV (Ghana) (720p)
 https://5dcabf026b188.streamlock.net/OceansTV/livestream/playlist.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="716" tvg-id="OTV.lb@SD" tvg-logo="https://i.imgur.com/toxFMeY.png",OTV (Lebanon) (1080p)
@@ -1269,18 +1271,18 @@ https://streams.tangotv.in/PRAGNEWS/ORIGIN/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="PrameyaNews7.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143578_ld_h15_aa.png?lock=720x540",Prameya News7 (576p)
 https://mumt03.tangotv.in/Dsly5z3HPRAMEYANEWS7/index.m3u8
 #EXTINF:-1 group-title="Entertainment Group" tvg-chno="201" tvg-id="Prima.cz@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Prima_2013.png/960px-Prima_2013.png",Prima (Czech Republic) (1080p)
-http://88.212.15.17/live/prima_avc_25p/playlist.m3u8
+http://88.212.15.50/live/prima_avc_25p/playlist.m3u8
 #EXTINF:-1 group-title="Entertainment Group" tvg-chno="201" tvg-id="Prima.ru@SD" tvg-logo="https://i.imgur.com/33XGMch.png",Prima (Russia) (1080p)
 https://tele2dvrnat01-02.cdnvideo.ru/stream/NAT_Prima/hls/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="PrimaNews.ro@SD" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Prima_News_logo_2022.svg/1280px-Prima_News_logo_2022.svg.png",Prima News
 https://hls02ns.antenaplay.ro/hls/prima-news-hd/index.m3u8
 #EXTINF:-1 group-title="Music Group" tvg-chno="603" tvg-id="PrimaStar.cz@SD" tvg-logo="https://i.imgur.com/ppqgNDA.png",Prima Star (1080p)
-http://88.212.15.17/live/test_prima_star_hevc_25p/playlist.m3u8
+http://88.212.15.50/live/test_prima_star_hevc_25p/playlist.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="Prime9News.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Prime_9_News.png",Prime9 News (1080p)
 https://mumbai-edge.smartplaytv.in/Prime9News/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="713" tvg-id="Prime.hu@SD" tvg-logo="https://i.imgur.com/VvZEP4s.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",Prime (Hungary)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-http://88.212.15.17/live/prime/index.m3u8
+http://88.212.7.14/live/prime/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="713" tvg-id="Prime.sy@HD" tvg-logo="https://prime1tv.com/wp-content/uploads/2025/12/7-1.png",Prime (Syria) (1080p)
 https://cdn.bestream.io/prime/prime.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="PrimeNews.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Prime_News.png",Prime News (1080p)
@@ -1431,7 +1433,7 @@ http://103.151.60.162:2122/play/a028/index.m3u8?hls
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="810" tvg-id="SonyYay.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s159100_ld_h15_aa.png?lock=720x540",Sony Yay! (576p)
 http://103.165.93.31:8095/sonyYay/index.m3u8
 #EXTINF:-1 group-title="Sports Channels" tvg-chno="101" tvg-id="Sport.sk@SD" tvg-logo="https://i.imgur.com/oAtcxNZ.png",Sport (Slovakia) (1080p)
-http://88.212.15.17/live/test_rtvs_sport_hevc/playlist.m3u8
+http://88.212.15.50/live/test_rtvs_sport_hevc/playlist.m3u8
 #EXTINF:-1 group-title="Sports Channels" tvg-chno="101" tvg-id="Sport.uz@SD" tvg-logo="https://i.imgur.com/2WJE9CM.png",Sport (Uzbekistan)
 https://stream8.cinerama.uz/1004/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Entertainment Group" tvg-chno="201" tvg-id="StarMaa.in@HD" tvg-logo="https://i.imgur.com/5c9PVS0.png",Star Maa HD (720p)
