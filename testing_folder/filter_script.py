@@ -8,7 +8,7 @@ import re
 import os
 
 # 1. లోకల్ ఫైల్స్ మరియు అవుట్‌పుట్ ప్లేలిస్ట్ పేర్లు
-FILTER_TXT_FILE = "channels_filter.txt"
+FILTER_TXT_FILE = "strict_channels_filter.txt"
 SOURCES_TXT_FILE = "source_links.txt"
 OUTPUT_FILE = "Multi_Source_Playlist.m3u"
 
