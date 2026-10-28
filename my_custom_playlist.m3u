@@ -74,7 +74,7 @@ https://mumbai-edge.smartplaytv.in/Hindudharmam/index.m3u8
 #EXTINF: group-title="News Group" tvg-chno="711"-1 tvg-id="HMTV.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143136_ld_h15_aa.png?lock=720x540",HMTV (India) (720p)
 https://cdn.pishow.tv/ott/live/280/master.m3u8
 #EXTINF: group-title="Kids / Animation" tvg-chno="806"-1 tvg-id="HungamaTV.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HUNGAMA/images/LOGO_HD/image.png",Hungama TV (576p)
-http://103.185.24.134:3001/HUNGAMA/index.m3u8
+http://66.102.126.10:8000/play/a023/index.m3u8
 #EXTINF: group-title="News Group" tvg-chno="712"-1 tvg-id="INews.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/I_News.png",INews (720p)
 https://cdn.pishow.tv/ott/live/411/master.m3u8
 #EXTINF: group-title="Religious Group" tvg-chno="903"-1 tvg-id="MahaaBhakti.in@SD" tvg-logo="https://yt3.googleusercontent.com/OWECRvCVJh-dXU2MTRZhMRIDvFvcWan0YMoWWfXsM5_WEHobQy2QoHQbGr7AZUXzMOByTMAXbg=s900-c-k-c0x00ffffff-no-rj",Mahaa Bhakti (1080p)
