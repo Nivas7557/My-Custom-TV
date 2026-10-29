@@ -41,8 +41,6 @@ http://66.102.126.10:8000/play/a013/index.m3u8
 http://103.151.60.162:2122/play/a016/index.m3u8?hls
 #EXTINF: group-title="News Group" tvg-chno="703"-1 tvg-id="ETVAndhraPradesh.in@SD" tvg-logo="https://i.imgur.com/pFNCRnf.png",ETV Andhra Pradesh (1080p)
 https://d1g35elx8qnif3.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_AP_H264_cloud_in/index.m3u8
-#EXTINF: group-title="Kids / Animation" tvg-chno="809"-1 tvg-id="ETVBalBharat.in@SD" tvg-logo="https://i.imgur.com/zsTxPV9.png",ETV Bal Bharat (576p)
-http://103.185.24.134:3001/ETV-BAL-BHARAT/index.m3u8
 #EXTINF: group-title="Telugu Music" tvg-chno="504"-1 tvg-id="ETVBeats.in@HD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ETVBeats1.png",ETV Beats (1080p)
 https://jmp2.uk/stvp-IN4900002RV
 #EXTINF: group-title="Movies Group" tvg-chno="302"-1 tvg-id="ETVCinema.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143026_ld_h15_aa.png?lock=720x540",ETV Cinema (396p)
