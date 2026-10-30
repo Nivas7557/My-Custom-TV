@@ -806,6 +806,8 @@ https://video01.brascast.com/d92ebb4f/d92ebb4f/playlist.m3u8
 http://183.207.248.71/gitv/live1/G_JSGG/G_JSGG
 #EXTINF:-1 group-title="Telugu Music" tvg-chno="505" tvg-id="Jim.fi@SD" tvg-logo="https://i.imgur.com/PkMgY0K.png",Jim (720p)
 https://live-fi.tvkaista.net/jim/live.m3u8?hd=true
+#EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="JingmenComprehensiveNewsChannel.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/jmsxwpd.jpg",Jingmen Comprehensive News Channel
+https://stream.jmtv.com.cn/xwzh/sd/live.m3u8?_upt=341f4b8e1791883036
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="JiuquanTVNewsComprehensiveChannel.cn@SD" tvg-logo="https://i.imgur.com/mPkG8Gi.png",Jiuquan TV News Comprehensive Channel (576p)
 http://117.156.28.119/270000001111/1110000001/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="JovemPanNews.br@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jovem_Pan_logo_2018.svg/960px-Jovem_Pan_logo_2018.svg.png",Jovem Pan News (720p)
@@ -1570,6 +1572,8 @@ https://content.uplynk.com/channel/33c48f602cfd4474b957eb4ad999caf8.m3u8
 http://181.114.57.246:4000/play/9w2G3HTtuTmrtgPZ/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="TSNTeleSondrioNews.it@SD" tvg-logo="https://i.imgur.com/eE37h7Q.png",TSN TeleSondrio News (480p) [Not 24/7]
 https://59d8c0cee6f3d.streamlock.net/tsn/tsn_mobile/playlist.m3u8
+#EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="TTVNews.tw@SD" tvg-logo="https://i.imgur.com/AfkK0gv.png",TTV News
+https://live.wcetv.com/hls/master-ttvnews.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1005" tvg-id="TV1.lt@SD" tvg-logo="https://i.imgur.com/KLWDcFy.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",TV1 (Lithuania) (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
 https://lnk5511.bstrm.net/live/687e3fa8679c8d4d68fab5dd/hd/manifest.mpd
