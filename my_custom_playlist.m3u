@@ -13,7 +13,7 @@ https://mumbai-edge.smartplaytv.in/AasthaTelugu/index.m3u8
 https://mumbai-edge.smartplaytv.in/ABNAJ/index.m3u8
 #EXTINF: group-title="English Movie Group" tvg-chno="407"-1 tvg-id="AMC.us@EastHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png",AMC (United States) (720p)
 http://23.239.31.26:8989/amc/index.m3u8
-#EXTINF: group-title="Music Group" tvg-chno="602"-1 tvg-id="B4UMusic.in@India" tvg-logo="https://dtil.tmsimg.com/assets/s158141_ld_h15_aa.png?lock=720x540",B4U Music (1080p)
+#EXTINF: group-title="Music Group" tvg-chno="602"-1 tvg-id="B4UMusic.in@India" tvg-logo="https://i.imgur.com/hytapio.png",B4U Music (1080p)
 https://amg01408-amg01408c5-amgplt0747.playout.now3.amagi.tv/b4um001/playlist.m3u8
 #EXTINF: group-title="Sports Channels" tvg-chno="113"-1 tvg-id="beINSPORTSXTRA.us@SD" tvg-logo="https://i.ibb.co/HT49GPmB/XTRA-2.png",beIN SPORTS XTRA (1080p)
 https://bein-xtra-bein.amagi.tv/playlist.m3u8
