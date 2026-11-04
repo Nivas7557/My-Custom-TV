@@ -1194,8 +1194,6 @@ https://mumt03.tangotv.in/Dsly5z3HNEWSXWORLD/index.m3u8
 https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/e3e6e29095844c4ba7d887f01e44a5ef/index.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="401" tvg-id="NHBollyFlix.in@HD" tvg-logo="https://i.ibb.co/yF9MPTDK/blyflx.png",NH BollyFlix (1080p)
 https://jmp2.uk/stvp-IN46000140Q
-#EXTINF:-1 group-title="English Movie Group" tvg-chno="401" tvg-id="NHBollyGold.in@HD" tvg-logo="https://i.ibb.co/x9PsrMy/NH-BOLLYGOLD.png",NH BollyGold (1080p)
-https://0dc330e6408b4c3b9ac31fd37b121368.mediatailor.ap-south-1.amazonaws.com/v1/master/d367f9b863a7a04827f71ecab4cbeeb11f78a827/nh-bollygold-airtel/playlist.m3u8
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="401" tvg-id="NHBollyRaga.in@HD" tvg-logo="https://i.ibb.co/BKB9mv1K/NH-Bolly-Raga.png",NH BollyRaga (1080p)
 https://jmp2.uk/stvp-IN460001373
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="802" tvg-id="Nickelodeon.br@SD" tvg-logo="https://i.imgur.com/E84jnP8.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",Nickelodeon (Brazil) (480p)
@@ -1518,8 +1516,6 @@ https://stream8.cinerama.uz/1004/tracks-v1a1/mono.m3u8
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starmaa1.smil/chunklist_b2628000.m3u8
 #EXTINF:-1 group-title="Entertainment Group" tvg-chno="201" tvg-id="StarMaaMovies.in@HD" tvg-logo="https://dtil.tmsimg.com/assets/s143826_ld_h15_aa.png?lock=720x540",Star Maa Movies HD (720p)
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:maamovies.smil/chunklist_b2628000.m3u8
-#EXTINF:-1 group-title="English Movie Group" tvg-chno="404" tvg-id="StarMovies.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_MOVIES/images/LOGO_HD/image.png",Star Movies (India) HD (1080p)
-http://103.151.60.162:2122/play/a02k/index.m3u8?hls
 #EXTINF:-1 group-title="English Movie Group" tvg-chno="404" tvg-id="StarMovies.pt@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Star_Movies_2023.svg/960px-Star_Movies_2023.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",Star Movies (Portugal)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://znty.dyndns.org:5010/hls/foxm.m3u8
@@ -1657,6 +1653,8 @@ http://15.204.246.24:8080/TVNHD/index.m3u8
 https://bcovlive-a.akamaihd.net/628aecb4fccb4c52b4f9c8d5cc57fb73/us-west-2/6058004209001/playlist_dvr.m3u8
 #EXTINF:-1 group-title="Documentary Group" tvg-chno="1005" tvg-id="TVP1.pl@SD" tvg-logo="https://i.imgur.com/ewpSjBs.png",TVP1 (1080p)
 http://57.128.210.196:8080/144/index.m3u8
+#EXTINF:-1 group-title="Documentary Group" tvg-chno="1005" tvg-id="TVP1.pl@HD" tvg-logo="https://i.imgur.com/ewpSjBs.png",TVP1 HD
+https://srv7.flussonic111.com/PL_TVP1_HD/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Entertainment Group" tvg-chno="204" tvg-id="TVPHD.pl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/TVP_HD_logo.svg/960px-TVP_HD_logo.svg.png",TVP HD (1080p)
 http://57.128.210.196:8080/141/index.m3u8
 #EXTINF:-1 group-title="Entertainment Group" tvg-chno="204" tvg-id="TVT.pl@SD" tvg-logo="https://i.imgur.com/oZyeUzG.png",TVT (Poland) (720p)
