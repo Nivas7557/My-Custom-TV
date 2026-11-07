@@ -8,9 +8,9 @@ OUTPUT_FILE = "Normalized Channels.m3u"
 # Target channel mapping configuration
 GROUPS_AND_CHANNELS = {
     "Sports Channels": [
-        "Star Sports 1", "Star Sports 2", "Star Sports 1 Hindi", "Star Sports First",
-        "Sony Sports Ten 1", "Sony Sports Ten 2", "Sony Sports Ten 3", "Sony Sports Ten 5",
-        "Sports18", "Eurosport", "DD Sports", "beIN SPORTS XTRA"
+        "Star Sports 1 Telugu", "Star Sports 2 Telugu", "Star Sports 1 Hindi", "Star Sports First",
+        "Sony Sports Ten 1", "Sony Sports Ten 2", "Sony Sports Ten 3", "Sony Sports Ten 4", "Sony Sports Ten 4",
+        "Ten Cricket", "Eurosport", "DD Sports", "beIN SPORTS XTRA"
     ],
     "Entertainment Group": [
         "Star Maa", "Zee Telugu", "Sun Gemini", "ETV Telugu", 
