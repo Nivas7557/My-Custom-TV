@@ -205,9 +205,9 @@ https://mumbai-edge.smartplaytv.in/BBCNews/index.m3u8
 http://45.153.96.44:8001
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="BBCNewsPashto.uk@HD" tvg-logo="https://static.files.bbci.co.uk/ws/simorgh-assets/public/pashto/images/metadata/poster-1024x576.png",BBC News Pashto (720p)
 https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:bbc_afghan_tv/pc_hd_abr_v2.mpd
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="112" tvg-id="beINSPORTSXTRA.us@SD" tvg-logo="https://i.ibb.co/HT49GPmB/XTRA-2.png",beIN SPORTS XTRA (1080p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="113" tvg-id="beINSPORTSXTRA.us@SD" tvg-logo="https://i.ibb.co/HT49GPmB/XTRA-2.png",beIN SPORTS XTRA (1080p)
 https://bein-xtra-bein.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="112" tvg-id="beINSPORTSXTRAenEspanol.us@SD" tvg-logo="https://i.imgur.com/V562tpO.png",beIN SPORTS XTRA en Espanol (1080p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="113" tvg-id="beINSPORTSXTRAenEspanol.us@SD" tvg-logo="https://i.imgur.com/V562tpO.png",beIN SPORTS XTRA en Espanol (1080p)
 https://dc1644a9jazgj.cloudfront.net/beIN_Sports_Xtra_Espanol.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="BEKNews.us@SD" tvg-logo="https://i.imgur.com/m80uxdz.png",BEK News (720p)
 https://cdn3.wowza.com/5/ZWQ1K2NYTmpFbGsr/BEK-WOWZA-1/smil:BEKPRIMEeast.smil/playlist.m3u8
@@ -420,9 +420,9 @@ https://mumbai-edge.smartplaytv.in/DDNews/index.m3u8
 https://fta.ektv.in/live/117/117_0.m3u8
 #EXTINF:-1 group-title="Entertainment Group" tvg-chno="213" tvg-id="DDSaptagiri.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_SAPTAGIRI/images/LOGO_HD/image.png",DD Saptagiri (576p)
 https://cdn.pishow.tv/ott/live/22/master.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="DDSports.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s158255_ld_h15_aa.png?lock=720x540",DD Sports (1080p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="112" tvg-id="DDSports.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s158255_ld_h15_aa.png?lock=720x540",DD Sports (1080p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="DDSports.in@HD" tvg-logo="https://dtil.tmsimg.com/assets/s158255_ld_h15_aa.png?lock=720x540",DD Sports HD (1080p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="112" tvg-id="DDSports.in@HD" tvg-logo="https://dtil.tmsimg.com/assets/s158255_ld_h15_aa.png?lock=720x540",DD Sports HD (1080p)
 https://cdn.pishow.tv/ott/live/1161/master.m3u8
 #EXTINF:-1 group-title="Music Group" tvg-chno="603" tvg-id="DemaisTV.br@SD" tvg-logo="https://i.imgur.com/Md3xibE.png",Demais TV (720p)
 https://cdn-tiva-stmv1-samcast-com-br.smartbit.co/demaistv6503/demaistv6503/playlist.m3u8
@@ -517,7 +517,7 @@ https://atlantida1.aquax1.cfd/disjr/usergendxvoq4rnd.m3u8
 http://tvsen5.aynascope.net/disney/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="DongguanComprehensiveNewsChannel.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/dgtv1.jpg",Dongguan Comprehensive News Channel
 http://stream.sun0769.com/dgrtv1/mp4tv1_1500.flv
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="DSports.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/DirecTV_Sports_Latin_America_%282018%29.png/960px-DirecTV_Sports_Latin_America_%282018%29.png",DSports (1080p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="112" tvg-id="DSports.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/DirecTV_Sports_Latin_America_%282018%29.png/960px-DirecTV_Sports_Latin_America_%282018%29.png",DSports (1080p)
 http://38.187.7.252:8000/play/a03d/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="DunyaNews.pk@SD" tvg-logo="https://i.imgur.com/1PbtW0y.png",Dunya News (720p) [Not 24/7]
 https://imob.dunyanews.tv/livehd/ngrp:dunyalivehd_2_all/playlist.m3u8
@@ -614,45 +614,45 @@ https://hls02ns.antenaplay.ro/hls/euronews-ro-sd/index.m3u8
 https://cdn-euronews.akamaized.net/live/eds/euronews-ru/25071/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="EuronewsSpanish.fr@SD" tvg-logo="https://i.imgur.com/8t9mdg9.png",Euronews Spanish (1080p)
 https://iptv.bitred.cl/euronews/index.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport1.fr@Czechia" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Czechia
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport1.fr@Czechia" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Czechia
 http://88.212.7.14/live/test_esp1_hevc_tizen/playlist.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport1.fr@Germany" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Germany
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport1.fr@Germany" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Germany
 http://90.183.52.46:4000/play/a06v/index.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport1.fr@Hungary" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Hungary
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport1.fr@Hungary" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Hungary
 http://88.212.7.14/live/esp1_hun/index.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport1.fr@Portugal" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Portugal
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport1.fr@Portugal" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Portugal
 http://185.228.163.146:8000/play/a03z/index.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport1.fr@Russia" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Russia (1080p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport1.fr@Russia" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Russia (1080p)
 https://s7.iptv-24.net/1439/playlist.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport1.fr@Spain" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Spain (576p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport1.fr@Spain" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Spain (576p)
 http://45.134.141.161:2200/ARG/Eurosport_1_HD/index.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport1.fr@Turkiye" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Turkiye
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport1.fr@Turkiye" tvg-logo="https://i.imgur.com/olQJgm7.png",Eurosport 1 Turkiye
 https://andro.mangeinde4.lat/checklist/androstreamlivees1.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport1Polska.pl@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e7/Eurosport_1_2022.svg/revision/latest?cb=20220806090310",Eurosport 1 Polska (1080p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport1Polska.pl@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e7/Eurosport_1_2022.svg/revision/latest?cb=20220806090310",Eurosport 1 Polska (1080p)
 http://57.128.210.196:8080/264/index.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport2.fr@Czechia" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Czechia
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport2.fr@Czechia" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Czechia
 http://88.212.7.14/live/test_esp2_hevc_tizen/playlist.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport2.fr@Hungary" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Hungary
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport2.fr@Hungary" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Hungary
 http://88.212.7.14/live/esp2_hun/index.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport2.fr@Portugal" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Portugal
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport2.fr@Portugal" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Portugal
 http://185.228.163.146:8000/play/a048/index.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport2.fr@Russia" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Russia (1080p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport2.fr@Russia" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Russia (1080p)
 https://s7.iptv-24.net/1452/playlist.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport2.fr@Spain" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Spain (1080p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport2.fr@Spain" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Spain (1080p)
 http://45.134.141.161:2200/ARG/Eurosport_2_HD/index.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport2.fr@Turkiye" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Turkiye
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport2.fr@Turkiye" tvg-logo="https://i.imgur.com/f56dHgR.png",Eurosport 2 Turkiye
 https://andro.mangeinde4.lat/checklist/androstreamlivees2.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport2Polska.pl@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/16/Eurosport_2_2022.svg/revision/latest?cb=20220417183127",Eurosport 2 Polska (1080p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport2Polska.pl@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/16/Eurosport_2_2022.svg/revision/latest?cb=20220417183127",Eurosport 2 Polska (1080p)
 http://57.128.210.196:8080/263/index.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport3Polska.pl@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/da/Eurosport_3_2022.svg/revision/latest?cb=20220418054130" http-user-agent="Enigma2",Eurosport 3 Polska
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport3Polska.pl@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/da/Eurosport_3_2022.svg/revision/latest?cb=20220418054130" http-user-agent="Enigma2",Eurosport 3 Polska
 #EXTVLCOPT:http-user-agent=Enigma2
 http://91.228.35.249:8001/1:0:1:3D:1964:13E:820000:0:0:0
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport4KCzechia.cz@UHD" tvg-logo="https://i.imgur.com/0o3zjC7.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",Eurosport 4K Czechia
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport4KCzechia.cz@UHD" tvg-logo="https://i.imgur.com/0o3zjC7.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",Eurosport 4K Czechia
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 http://88.212.15.50/live/esp_4k_atk/playlist.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002E9LQS.png?lock=720x540",Eurosport (720p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002E9LQS.png?lock=720x540",Eurosport (720p)
 https://drk6xq0vhn.gpcdn.net/live/euro_sports_hd_abr/index.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="Eurosport.in@HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002E9LQS.png?lock=720x540",Eurosport HD (1080p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="111" tvg-id="Eurosport.in@HD" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002E9LQS.png?lock=720x540",Eurosport HD (1080p)
 https://livetv.shamon-cable.net:8443/Eurosport-HD/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="ExtraProNews.gr@SD" tvg-logo="https://i.imgur.com/VKW9xw6.png",Extra ProNews (576p)
 http://62.1.176.18:8888/extra/index.m3u8
@@ -835,7 +835,7 @@ https://cdn.pishow.tv/ott/live/411/master.m3u8
 https://jmp2.uk/plu-60807fd5db701400078219c2.m3u8
 #EXTINF:-1 group-title="Music Group" tvg-chno="603" tvg-id="InkMaster.us@CA" tvg-logo="https://images.pluto.tv/channels/655f2d713944b60008bc7e90/colorLogoPNG.png",Ink Master CA
 https://jmp2.uk/plu-655f2d713944b60008bc7e90.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="112" tvg-id="INSP.us@SD" tvg-logo="https://i.imgur.com/YgOC51j.png",INSP (720p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="113" tvg-id="INSP.us@SD" tvg-logo="https://i.imgur.com/YgOC51j.png",INSP (720p)
 https://a-cdn.klowdtv.com/live2/insp_720p/playlist.m3u8
 #EXTINF:-1 group-title="Sports Channels" tvg-chno="101" tvg-id="Iris.it@HD" tvg-logo="https://i.imgur.com/ZLnSLh4.png",Iris HD (1080p)
 https://live02-seg.msf.cdn.mediaset.net/live/ch-ki/ki-clr.isml/index.m3u8
@@ -986,7 +986,7 @@ https://stream.digitalgt.com:3136/live/multivisionlive.m3u8
 #EXTINF:-1 group-title="Music Group" tvg-chno="605" tvg-id="MusicIndia.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143563_ld_h15_aa.png?lock=720x540" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",Music India (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/158/master.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="112" tvg-id="NSports.br@SD" tvg-logo="https://i.imgur.com/7QnJojr.png",N Sports (1080p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="113" tvg-id="NSports.br@SD" tvg-logo="https://i.imgur.com/7QnJojr.png",N Sports (1080p)
 https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="NanchangNewsGeneralistChannel.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/nctv1.jpg",Nanchang News & Generalist Channel
 https://play-live-hls.jxtvcn.com.cn/live-city/tv_nanchang.m3u8
@@ -1432,6 +1432,8 @@ https://bk7l298nyx53-hls-live.5centscdn.com/realnews/e7dee419f91aa9e65939d3677fb
 http://45.162.64.114/RECORD_NEWS/index.m3u8
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="RevryNews.us@SD" tvg-logo="https://i.imgur.com/lKMYCkb.png",Revry News (720p) [Not 24/7]
 https://linear-44.frequency.stream/dist/plex/44/hls/master/playlist.m3u8
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="RiC.de@SD" tvg-logo="https://i.imgur.com/4wMZ8Em.png",RiC (1080p)
+https://rictv.iptv-playoutcenter.de/rictv/rictv-web/playlist.m3u8
 #EXTINF:-1 group-title="Kids / Animation" tvg-chno="801" tvg-id="RIKHD.cy@SD" tvg-logo="https://i.imgur.com/xQnHaPy.png",RIK HD
 http://213.7.216.229:8888/udp/239.23.0.5:1234
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="RozeNews.pk@SD" tvg-logo="https://i.imgur.com/TedWqfL.png",Roze News (576p)
@@ -1678,7 +1680,7 @@ http://92.114.85.87:8009/play/a009/index.m3u8
 https://live.streamtvt.pl/LiveAppStreamTVT/streams/853271271313930867905724.m3u8
 #EXTINF:-1 group-title="Entertainment Group" tvg-chno="204" tvg-id="TVT.sk@SD" tvg-logo="https://i.imgur.com/QG0iZlG.png",TVT (Slovakia) (486p)
 https://5ca49f2417d90.streamlock.net/live/turzovka/playlist.m3u8
-#EXTINF:-1 group-title="Sports Channels" tvg-chno="110" tvg-id="U.ru@SD" tvg-logo="https://i.imgur.com/KDZvt0Q.png",U (720p)
+#EXTINF:-1 group-title="Sports Channels" tvg-chno="101" tvg-id="U.ru@SD" tvg-logo="https://i.imgur.com/KDZvt0Q.png",U (720p)
 https://bl.rutube.ru/livestream/5c9327074e25ca86f3111d4085cbbb65/index.m3u8?e=2066519758&s=9cPc1rCGu6M932eqrifRhQ&scheme=https
 #EXTINF:-1 group-title="News Group" tvg-chno="712" tvg-id="UNews.lb@SD" tvg-logo="",UNews (1080p)
 https://cdn.catiacast.video/abr/9436b5ab3c1171ab04a59af11951292f/playlist.m3u8
